@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class InOperation {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Get user input for a, b, and c
+        System.out.print("Enter the first integer (a): ");
+        int a = scanner.nextInt();
+        System.out.print("Enter the second integer (b): ");
+        int b = scanner.nextInt();
+        System.out.print("Enter the third integer (c): ");
+        int c = scanner.nextInt();
+        int result1 = a + b * c; 
+        int result2 = a * b + c; 
+        int result3 = c + a / b; 
+        int result4 = a % b + c; 
+        System.out.println("a + b * c = " + result1);
+        System.out.println("a * b + c = " + result2);
+        System.out.println("c + a / b = " + result3);
+        System.out.println("a % b + c = " + result4);
+        
+        scanner.close();
+    }
+}
